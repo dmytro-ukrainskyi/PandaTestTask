@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct PandaTestTaskApp: App {
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
+    
 }

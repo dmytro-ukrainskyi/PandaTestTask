@@ -11,6 +11,11 @@
 		13A5FBA62AC616A3005E3C48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5FBA52AC616A3005E3C48 /* ContentView.swift */; };
 		13A5FBA82AC616A4005E3C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A5FBA72AC616A4005E3C48 /* Assets.xcassets */; };
 		13A5FBAB2AC616A4005E3C48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A5FBAA2AC616A4005E3C48 /* Preview Assets.xcassets */; };
+		13A5FBB82AC61960005E3C48 /* MainPandaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5FBB72AC61960005E3C48 /* MainPandaView.swift */; };
+		13A5FBBD2AC6255D005E3C48 /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5FBBC2AC6255D005E3C48 /* CustomButtonStyle.swift */; };
+		13A5FBC02AC70323005E3C48 /* DetailPandaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5FBBF2AC70323005E3C48 /* DetailPandaView.swift */; };
+		13A5FBC22AC703E4005E3C48 /* PandaImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5FBC12AC703E4005E3C48 /* PandaImageView.swift */; };
+		13A5FBC52AC70571005E3C48 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5FBC42AC70571005E3C48 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		13A5FBA52AC616A3005E3C48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		13A5FBA72AC616A4005E3C48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13A5FBAA2AC616A4005E3C48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		13A5FBB72AC61960005E3C48 /* MainPandaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPandaView.swift; sourceTree = "<group>"; };
+		13A5FBBC2AC6255D005E3C48 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
+		13A5FBBF2AC70323005E3C48 /* DetailPandaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPandaView.swift; sourceTree = "<group>"; };
+		13A5FBC12AC703E4005E3C48 /* PandaImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaImageView.swift; sourceTree = "<group>"; };
+		13A5FBC42AC70571005E3C48 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,20 +61,81 @@
 		13A5FBA22AC616A3005E3C48 /* PandaTestTask */ = {
 			isa = PBXGroup;
 			children = (
-				13A5FBA32AC616A3005E3C48 /* PandaTestTaskApp.swift */,
-				13A5FBA52AC616A3005E3C48 /* ContentView.swift */,
-				13A5FBA72AC616A4005E3C48 /* Assets.xcassets */,
-				13A5FBA92AC616A4005E3C48 /* Preview Content */,
+				13A5FBC32AC70560005E3C48 /* Constant */,
+				13A5FBB12AC616C3005E3C48 /* Resource */,
+				13A5FBB32AC617A1005E3C48 /* Root */,
+				13A5FBB22AC6179A005E3C48 /* UI */,
 			);
 			path = PandaTestTask;
 			sourceTree = "<group>";
 		};
-		13A5FBA92AC616A4005E3C48 /* Preview Content */ = {
+		13A5FBB12AC616C3005E3C48 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				13A5FBA72AC616A4005E3C48 /* Assets.xcassets */,
 				13A5FBAA2AC616A4005E3C48 /* Preview Assets.xcassets */,
 			);
-			path = "Preview Content";
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		13A5FBB22AC6179A005E3C48 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				13A5FBB52AC617AD005E3C48 /* Component */,
+				13A5FBB42AC617A9005E3C48 /* Screen */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		13A5FBB32AC617A1005E3C48 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				13A5FBA32AC616A3005E3C48 /* PandaTestTaskApp.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		13A5FBB42AC617A9005E3C48 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				13A5FBA52AC616A3005E3C48 /* ContentView.swift */,
+				13A5FBBE2AC702E7005E3C48 /* DetailPandaView */,
+				13A5FBB62AC6182D005E3C48 /* MainPandaView */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		13A5FBB52AC617AD005E3C48 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				13A5FBBC2AC6255D005E3C48 /* CustomButtonStyle.swift */,
+				13A5FBC12AC703E4005E3C48 /* PandaImageView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		13A5FBB62AC6182D005E3C48 /* MainPandaView */ = {
+			isa = PBXGroup;
+			children = (
+				13A5FBB72AC61960005E3C48 /* MainPandaView.swift */,
+			);
+			path = MainPandaView;
+			sourceTree = "<group>";
+		};
+		13A5FBBE2AC702E7005E3C48 /* DetailPandaView */ = {
+			isa = PBXGroup;
+			children = (
+				13A5FBBF2AC70323005E3C48 /* DetailPandaView.swift */,
+			);
+			path = DetailPandaView;
+			sourceTree = "<group>";
+		};
+		13A5FBC32AC70560005E3C48 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				13A5FBC42AC70571005E3C48 /* Constants.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +148,7 @@
 				13A5FB9C2AC616A3005E3C48 /* Sources */,
 				13A5FB9D2AC616A3005E3C48 /* Frameworks */,
 				13A5FB9E2AC616A3005E3C48 /* Resources */,
+				1366D0D92AC7402900465F5F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -132,12 +204,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1366D0D92AC7402900465F5F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		13A5FB9C2AC616A3005E3C48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13A5FBB82AC61960005E3C48 /* MainPandaView.swift in Sources */,
+				13A5FBC22AC703E4005E3C48 /* PandaImageView.swift in Sources */,
 				13A5FBA62AC616A3005E3C48 /* ContentView.swift in Sources */,
+				13A5FBBD2AC6255D005E3C48 /* CustomButtonStyle.swift in Sources */,
+				13A5FBC52AC70571005E3C48 /* Constants.swift in Sources */,
+				13A5FBC02AC70323005E3C48 /* DetailPandaView.swift in Sources */,
 				13A5FBA42AC616A3005E3C48 /* PandaTestTaskApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +364,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PandaTestTask/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PandaTestTask/Resource\"";
 				DEVELOPMENT_TEAM = 638X89N9H7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -275,6 +373,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,6 +381,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "-.PandaTestTask";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,7 +397,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PandaTestTask/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PandaTestTask/Resource\"";
 				DEVELOPMENT_TEAM = 638X89N9H7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -304,6 +406,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +414,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "-.PandaTestTask";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
