@@ -1,5 +1,5 @@
 //
-//  MainPandaView.swift
+//  MainView.swift
 //  PandaTestTask
 //
 //  Created by Dmytro Ukrainskyi on 28.09.2023.
@@ -7,15 +7,22 @@
 
 import SwiftUI
 
-struct MainPandaView: View {
+struct MainView: View {
     
     // MARK: Private Properties
+    
+    @StateObject
+    private var mainViewModel = MainViewModel()
     
     @State
     private var isOpenFromTopButtonDisabled: Bool = false
     
     @State
     private var isDetailViewPresented: Bool = false
+    
+    private var image: Image {
+        Image(mainViewModel.imageName)
+    }
     
     // MARK: Body
     
@@ -36,9 +43,10 @@ struct MainPandaView: View {
             }
             .padding(Constants.defaultPadding)
             .background(Constants.backgroundColor)
-            .overlay(isDetailViewPresented
-                     ? detailView
-                     : nil
+            .overlay(
+                isDetailViewPresented
+                ? detailView
+                : nil
             )
         }
     }
@@ -46,12 +54,15 @@ struct MainPandaView: View {
     // MARK: Components
     
     private var detailView: some View {
-        DetailPandaView(isPresented: $isDetailViewPresented.animation())
-            .transition(.move(edge: .top))
+        DetailView(
+            image: image,
+            isPresented: $isDetailViewPresented.animation()
+        )
+        .transition(.move(edge: .top))
     }
     
     private func image(screenHeight: CGFloat) -> some View {
-        PandaImageView()
+        CustomImageView(image: image)
             .frame(
                 width: Constants.imageWidth,
                 height: screenHeight
@@ -97,7 +108,7 @@ struct MainPandaView: View {
 
 // MARK: - Constants
 
-private extension MainPandaView {
+private extension MainView {
     
     enum Constants {
         
@@ -117,10 +128,10 @@ private extension MainPandaView {
 
 // MARK: - Preview
 
-struct MainPandaView_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     
     static var previews: some View {
-        MainPandaView()
+        MainView()
     }
     
 }

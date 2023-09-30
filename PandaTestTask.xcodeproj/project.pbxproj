@@ -7,27 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1366D0DD2AC86D2D00465F5F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1366D0DC2AC86D2D00465F5F /* MainViewModel.swift */; };
 		13A5FBA42AC616A3005E3C48 /* PandaTestTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5FBA32AC616A3005E3C48 /* PandaTestTaskApp.swift */; };
 		13A5FBA62AC616A3005E3C48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5FBA52AC616A3005E3C48 /* ContentView.swift */; };
 		13A5FBA82AC616A4005E3C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A5FBA72AC616A4005E3C48 /* Assets.xcassets */; };
 		13A5FBAB2AC616A4005E3C48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A5FBAA2AC616A4005E3C48 /* Preview Assets.xcassets */; };
-		13A5FBB82AC61960005E3C48 /* MainPandaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5FBB72AC61960005E3C48 /* MainPandaView.swift */; };
+		13A5FBB82AC61960005E3C48 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5FBB72AC61960005E3C48 /* MainView.swift */; };
 		13A5FBBD2AC6255D005E3C48 /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5FBBC2AC6255D005E3C48 /* CustomButtonStyle.swift */; };
 		13A5FBC02AC70323005E3C48 /* DetailPandaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5FBBF2AC70323005E3C48 /* DetailPandaView.swift */; };
-		13A5FBC22AC703E4005E3C48 /* PandaImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5FBC12AC703E4005E3C48 /* PandaImageView.swift */; };
+		13A5FBC22AC703E4005E3C48 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5FBC12AC703E4005E3C48 /* CustomImageView.swift */; };
 		13A5FBC52AC70571005E3C48 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5FBC42AC70571005E3C48 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1366D0DC2AC86D2D00465F5F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		13A5FBA02AC616A3005E3C48 /* PandaTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PandaTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13A5FBA32AC616A3005E3C48 /* PandaTestTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaTestTaskApp.swift; sourceTree = "<group>"; };
 		13A5FBA52AC616A3005E3C48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		13A5FBA72AC616A4005E3C48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13A5FBAA2AC616A4005E3C48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		13A5FBB72AC61960005E3C48 /* MainPandaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPandaView.swift; sourceTree = "<group>"; };
+		13A5FBB72AC61960005E3C48 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		13A5FBBC2AC6255D005E3C48 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
 		13A5FBBF2AC70323005E3C48 /* DetailPandaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPandaView.swift; sourceTree = "<group>"; };
-		13A5FBC12AC703E4005E3C48 /* PandaImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaImageView.swift; sourceTree = "<group>"; };
+		13A5FBC12AC703E4005E3C48 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		13A5FBC42AC70571005E3C48 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,8 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				13A5FBA52AC616A3005E3C48 /* ContentView.swift */,
-				13A5FBBE2AC702E7005E3C48 /* DetailPandaView */,
-				13A5FBB62AC6182D005E3C48 /* MainPandaView */,
+				13A5FBBE2AC702E7005E3C48 /* DetailView */,
+				13A5FBB62AC6182D005E3C48 /* MainView */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -109,25 +111,26 @@
 			isa = PBXGroup;
 			children = (
 				13A5FBBC2AC6255D005E3C48 /* CustomButtonStyle.swift */,
-				13A5FBC12AC703E4005E3C48 /* PandaImageView.swift */,
+				13A5FBC12AC703E4005E3C48 /* CustomImageView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
 		};
-		13A5FBB62AC6182D005E3C48 /* MainPandaView */ = {
+		13A5FBB62AC6182D005E3C48 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				13A5FBB72AC61960005E3C48 /* MainPandaView.swift */,
+				13A5FBB72AC61960005E3C48 /* MainView.swift */,
+				1366D0DC2AC86D2D00465F5F /* MainViewModel.swift */,
 			);
-			path = MainPandaView;
+			path = MainView;
 			sourceTree = "<group>";
 		};
-		13A5FBBE2AC702E7005E3C48 /* DetailPandaView */ = {
+		13A5FBBE2AC702E7005E3C48 /* DetailView */ = {
 			isa = PBXGroup;
 			children = (
 				13A5FBBF2AC70323005E3C48 /* DetailPandaView.swift */,
 			);
-			path = DetailPandaView;
+			path = DetailView;
 			sourceTree = "<group>";
 		};
 		13A5FBC32AC70560005E3C48 /* Constant */ = {
@@ -230,8 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13A5FBB82AC61960005E3C48 /* MainPandaView.swift in Sources */,
-				13A5FBC22AC703E4005E3C48 /* PandaImageView.swift in Sources */,
+				1366D0DD2AC86D2D00465F5F /* MainViewModel.swift in Sources */,
+				13A5FBB82AC61960005E3C48 /* MainView.swift in Sources */,
+				13A5FBC22AC703E4005E3C48 /* CustomImageView.swift in Sources */,
 				13A5FBA62AC616A3005E3C48 /* ContentView.swift in Sources */,
 				13A5FBBD2AC6255D005E3C48 /* CustomButtonStyle.swift in Sources */,
 				13A5FBC52AC70571005E3C48 /* Constants.swift in Sources */,

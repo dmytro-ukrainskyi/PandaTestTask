@@ -1,5 +1,5 @@
 //
-//  PandaImageView.swift
+//  CustomImageView.swift
 //  PandaTestTask
 //
 //  Created by Dmytro Ukrainskyi on 29.09.2023.
@@ -7,12 +7,16 @@
 
 import SwiftUI
 
-struct PandaImageView: View {
+struct CustomImageView: View {
+    
+    // MARK: Public properties
+    
+    var image: Image
     
     // MARK: Body
     
     var body: some View {
-        Image(Images.panda)
+        image
             .resizable()
             .scaledToFill()
     }
@@ -21,10 +25,10 @@ struct PandaImageView: View {
 
 // MARK: - Preview
 
-struct PandaImageView_Previews: PreviewProvider {
+struct CustomImageView_Previews: PreviewProvider {
     
     static var previews: some View {
-        PandaImageView()
+        CustomImageView(image: Image(Images.panda))
     }
     
 }

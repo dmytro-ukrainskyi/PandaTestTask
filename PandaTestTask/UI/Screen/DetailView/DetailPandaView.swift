@@ -1,5 +1,5 @@
 //
-//  DetailPandaView.swift
+//  DetailView.swift
 //  PandaTestTask
 //
 //  Created by Dmytro Ukrainskyi on 29.09.2023.
@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-struct DetailPandaView: View {
+struct DetailView: View {
     
     // MARK: Public Properties
+    
+    let image: Image
     
     @Binding
     var isPresented: Bool
@@ -40,7 +42,7 @@ struct DetailPandaView: View {
     
     private func image(width: CGFloat,
                        height: CGFloat) -> some View {
-        PandaImageView()
+        CustomImageView(image: image)
             .frame(
                 width: width,
                 height: height,
@@ -66,7 +68,7 @@ struct DetailPandaView: View {
 
 // MARK: - Constants
 
-private extension DetailPandaView {
+private extension DetailView {
     
     enum Constants {
         
@@ -82,10 +84,11 @@ private extension DetailPandaView {
 
 // MARK: - Preview
 
-struct DetailPandaView_Previews: PreviewProvider {
+struct DetailView_Previews: PreviewProvider {
     
     static var previews: some View {
-        DetailPandaView(isPresented: .constant(true))
+        DetailView(image: Image(Images.panda),
+                   isPresented: .constant(true))
     }
     
 }
